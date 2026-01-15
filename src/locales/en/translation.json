@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "track": "Track Request",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "eMitra Seva Kendra",
+    "subtitle": "Welcome to Rajasthan",
+    "description": "All government services at one place. Aadhaar, Jan Aadhaar, Certificates and much more.",
+    "viewServices": "View Services",
+    "submitRequest": "Submit Request"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "All government services under one roof",
+    "requestService": "Request Service",
+    "learnMore": "Learn More",
+    "aadhaar": {
+      "name": "Aadhaar Services",
+      "description": "New Aadhaar, Update, Print and Corrections"
+    },
+    "janAadhaar": {
+      "name": "Jan Aadhaar",
+      "description": "Create and update Jan Aadhaar card"
+    },
+    "billPayments": {
+      "name": "Bill Payments",
+      "description": "Electricity, Water, Gas and other bills"
+    },
+    "birthCertificate": {
+      "name": "Birth Certificate",
+      "description": "Apply for birth certificate"
+    },
+    "deathCertificate": {
+      "name": "Death Certificate",
+      "description": "Apply for death certificate"
+    },
+    "incomeCertificate": {
+      "name": "Income Certificate",
+      "description": "Get income certificate"
+    },
+    "domicileCertificate": {
+      "name": "Domicile Certificate",
+      "description": "Rajasthan domicile certificate"
+    },
+    "casteCertificate": {
+      "name": "Caste Certificate",
+      "description": "Apply for caste certificate"
+    },
+    "pension": {
+      "name": "Pension Services",
+      "description": "Old age, widow and disability pension"
+    },
+    "formFilling": {
+      "name": "Government Form Filling",
+      "description": "Fill all types of government forms"
+    }
+  },
+  "whyUs": {
+    "title": "Why Choose Us?",
+    "fast": {
+      "title": "Fast Service",
+      "description": "Quick and accurate work"
+    },
+    "trusted": {
+      "title": "Trusted",
+      "description": "5000+ satisfied customers"
+    },
+    "affordable": {
+      "title": "Affordable",
+      "description": "Services at government rates"
+    },
+    "support": {
+      "title": "Full Support",
+      "description": "Help at every step"
+    }
+  },
+  "stats": {
+    "requests": "Requests Completed",
+    "services": "Services Available",
+    "years": "Years Experience",
+    "customers": "Happy Customers"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "eMitra Seva Kendra, Rajasthan",
+    "description": "We provide all government services to citizens of Rajasthan at one place. Our goal is to ensure every citizen gets government services easily and quickly.",
+    "owner": "Shop Owner",
+    "experience": "10+ Years Experience",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Monday - Saturday: 9 AM - 7 PM",
+    "closed": "Sunday: Closed"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "address": "Address",
+    "phone": "Phone",
+    "whatsapp": "Contact on WhatsApp",
+    "mapLink": "View on Google Maps",
+    "form": {
+      "name": "Your Name",
+      "mobile": "Mobile Number",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+  "request": {
+    "title": "Service Request",
+    "subtitle": "Request your service",
+    "form": {
+      "fullName": "Full Name",
+      "mobile": "Mobile Number",
+      "email": "Email (Optional)",
+      "serviceType": "Service Type",
+      "selectService": "Select Service",
+      "message": "Details / Message",
+      "document": "Upload Document (Optional)",
+      "submit": "Submit Request"
+    },
+    "success": {
+      "title": "Request Successful!",
+      "message": "Your request has been submitted successfully.",
+      "requestId": "Your Request ID",
+      "note": "Please keep this ID safe."
+    }
+  },
+  "track": {
+    "title": "Track Request",
+    "subtitle": "Check your request status",
+    "form": {
+      "mobile": "Mobile Number",
+      "requestId": "Request ID",
+      "submit": "Track"
+    },
+    "status": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "result": {
+      "service": "Service",
+      "status": "Status",
+      "lastUpdated": "Last Updated"
+    }
+  },
+  "footer": {
+    "tagline": "All government services under one roof",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "copyright": "© 2025 eMitra Seva Kendra. All rights reserved."
+  },
+  "carousel": {
+    "slide1": {
+      "title": "Aadhaar Services",
+      "description": "New Aadhaar, Update and Corrections - All here"
+    },
+    "slide2": {
+      "title": "Certificate Services",
+      "description": "Birth, Death, Income, Caste all certificates"
+    },
+    "slide3": {
+      "title": "Bill Payments",
+      "description": "Electricity, Water, Gas all bills at one place"
+    },
+    "slide4": {
+      "title": "Pension Services",
+      "description": "Help with old age and widow pension"
+    }
+  }
+}
