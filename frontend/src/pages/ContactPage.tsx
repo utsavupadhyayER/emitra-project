@@ -49,11 +49,16 @@ const ContactPage: React.FC = () => {
     }
   };
 
-  const whatsappNumber = "9785358031";
+  // ✅ WhatsApp (FIXED)
+  const whatsappNumber = "919785358031"; // 91 + mobile number
   const whatsappMessage = encodeURIComponent(
     "Hello! I need help with eMitra services."
   );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+  // ✅ Google Maps (FIXED – shop location)
+  const googleMapsLink =
+    "https://www.google.com/maps/search/?api=1&query=Raj+Computers+Chhonkarwara+Kalan+Bharatpur";
 
   return (
     <div className="min-h-screen py-12 md:py-20">
@@ -146,8 +151,9 @@ const ContactPage: React.FC = () => {
                 <MessageCircle className="w-5 h-5" />
                 {t("contact.whatsapp")}
               </a>
+
               <a
-                href="https://www.google.co.in/maps"
+                href={googleMapsLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-hero-secondary flex-1 justify-center"
