@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+
+
+/* eMitra Service Center Design System
+   Government-style, accessible, Hindi-first
+   Colors: Saffron (primary), Green (accent), Clean whites
+*/
+
+@layer base {
+  :root {
+    /* Saffron/Orange - Indian Government Colors */
+    --background: 30 50% 98%;
+    --foreground: 20 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 20% 15%;
+
+    /* Saffron Primary */
+    --primary: 28 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm Secondary */
+    --secondary: 35 40% 95%;
+    --secondary-foreground: 20 20% 20%;
+
+    /* Muted tones */
+    --muted: 30 20% 94%;
+    --muted-foreground: 20 10% 45%;
+
+    /* Green Accent (Indian tricolor) */
+    --accent: 145 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 92%;
+    --ring: 28 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --saffron: 28 100% 50%;
+    --saffron-light: 35 100% 95%;
+    --saffron-dark: 25 100% 40%;
+    --green-india: 145 60% 35%;
+    --green-light: 145 40% 95%;
+    --blue-govt: 210 70% 45%;
+    --blue-light: 210 60% 95%;
+
+    /* Gradients */
+    --gradient-saffron: linear-gradient(135deg, hsl(28 100% 55%) 0%, hsl(35 100% 50%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(30 50% 98%) 0%, hsl(35 60% 96%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(30 30% 99%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(20 20% 15% / 0.05);
+    --shadow-md: 0 4px 12px hsl(20 20% 15% / 0.08);
+    --shadow-lg: 0 8px 24px hsl(20 20% 15% / 0.12);
+    --shadow-card: 0 2px 8px hsl(28 100% 50% / 0.08);
+    --shadow-card-hover: 0 8px 24px hsl(28 100% 50% / 0.15);
+
+    /* Typography */
+    --font-hindi: 'Noto Sans Devanagari', sans-serif;
+    --font-english: 'Inter', sans-serif;
+
+    --sidebar-background: 30 30% 97%;
+    --sidebar-foreground: 20 20% 25%;
+    --sidebar-primary: 28 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 40% 94%;
+    --sidebar-accent-foreground: 20 20% 20%;
+    --sidebar-border: 30 20% 90%;
+    --sidebar-ring: 28 100% 50%;
+  }
+
+  .dark {
+    --background: 20 25% 8%;
+    --foreground: 30 20% 95%;
+
+    --card: 20 20% 12%;
+    --card-foreground: 30 20% 95%;
+
+    --popover: 20 20% 12%;
+    --popover-foreground: 30 20% 95%;
+
+    --primary: 28 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 30 20% 90%;
+
+    --muted: 20 15% 20%;
+    --muted-foreground: 30 15% 60%;
+
+    --accent: 145 50% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 15% 22%;
+    --input: 20 15% 22%;
+    --ring: 28 100% 55%;
+
+    --saffron: 28 100% 55%;
+    --saffron-light: 25 30% 20%;
+    --saffron-dark: 28 100% 45%;
+    --green-india: 145 50% 40%;
+    --green-light: 145 20% 18%;
+    --blue-govt: 210 60% 50%;
+    --blue-light: 210 30% 18%;
+
+    --gradient-saffron: linear-gradient(135deg, hsl(28 100% 50%) 0%, hsl(35 90% 45%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(20 25% 8%) 0%, hsl(20 20% 10%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(20 20% 12%) 0%, hsl(20 18% 14%) 100%);
+
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 8px 24px hsl(0 0% 0% / 0.4);
+    --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.2);
+    --shadow-card-hover: 0 8px 24px hsl(28 100% 50% / 0.2);
+
+    --sidebar-background: 20 20% 10%;
+    --sidebar-foreground: 30 20% 90%;
+    --sidebar-primary: 28 100% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 15% 18%;
+    --sidebar-accent-foreground: 30 20% 90%;
+    --sidebar-border: 20 15% 20%;
+    --sidebar-ring: 28 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: var(--font-hindi);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-hindi);
+  }
+
+  /* Language-specific font handling */
+  [lang="en"] body,
+  .lang-en {
+    font-family: var(--font-english);
+  }
+
+  [lang="hi"] body,
+  .lang-hi {
+    font-family: var(--font-hindi);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300;
+    background: var(--gradient-saffron);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-md), 0 4px 16px hsl(28 100% 50% / 0.3);
+  }
+
+  .btn-hero-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg), 0 8px 24px hsl(28 100% 50% / 0.4);
+  }
+
+  .btn-hero-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 border-2;
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
+    background: hsl(var(--background));
+  }
+
+  .btn-hero-secondary:hover {
+    background: hsl(var(--saffron-light));
+    transform: translateY(-2px);
+  }
+
+  /* Service Card */
+  .service-card {
+    @apply relative overflow-hidden rounded-2xl p-6 transition-all duration-300;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    border: 1px solid hsl(var(--border));
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+
+  /* Carousel Card */
+  .carousel-card {
+    @apply relative overflow-hidden rounded-2xl min-w-[300px] md:min-w-[400px] h-[250px] md:h-[300px];
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .carousel-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent;
+  }
+
+  /* Stats Card */
+  .stats-card {
+    @apply flex flex-col items-center p-6 rounded-2xl text-center;
+    background: hsl(var(--saffron-light));
+    border: 1px solid hsl(var(--primary) / 0.2);
+  }
+
+  /* Section Styling */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-4;
+    color: hsl(var(--foreground));
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-center mb-12;
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Navbar */
+  .navbar {
+    @apply sticky top-0 z-50 backdrop-blur-md border-b;
+    background: hsl(var(--background) / 0.95);
+    border-color: hsl(var(--border));
+  }
+
+  /* Language Toggle */
+  .lang-toggle {
+    @apply flex items-center rounded-full p-1 text-sm font-medium;
+    background: hsl(var(--secondary));
+  }
+
+  .lang-toggle-btn {
+    @apply px-3 py-1.5 rounded-full transition-all duration-200;
+  }
+
+  .lang-toggle-btn.active {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  /* Form Styles */
+  .form-input {
+    @apply w-full px-4 py-3 rounded-xl border transition-all duration-200 text-base;
+    background: hsl(var(--background));
+    border-color: hsl(var(--border));
+  }
+
+  .form-input:focus {
+    @apply outline-none ring-2;
+    border-color: hsl(var(--primary));
+    ring-color: hsl(var(--primary) / 0.2);
+  }
+
+  .form-label {
+    @apply block text-sm font-medium mb-2;
+    color: hsl(var(--foreground));
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-btn {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300;
+    background: hsl(145 70% 42%);
+    color: white;
+  }
+
+  .whatsapp-btn:hover {
+    background: hsl(145 70% 38%);
+    transform: translateY(-2px);
+  }
+
+  /* Horizontal Scroll */
+  .scroll-container {
+    @apply flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+
+}
