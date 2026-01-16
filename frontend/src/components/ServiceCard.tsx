@@ -1,43 +1,54 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, LucideIcon } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface ServiceCardProps {
-  icon: LucideIcon;
+  icon: React.ElementType;
   nameKey: string;
   descriptionKey: string;
   delay?: number;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ icon: Icon, nameKey, descriptionKey, delay = 0 }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  icon: Icon,
+  nameKey,
+  descriptionKey,
+  delay = 0,
+}) => {
   const { t } = useTranslation();
+
+  const phoneNumber = "919785358031";
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay }}
-      viewport={{ once: true }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay, duration: 0.4 }}
+      className="bg-card p-6 rounded-2xl shadow-card flex flex-col justify-between"
     >
-      <Link to="/request">
-        <div className="service-card group h-full">
-          <div className="w-14 h-14 rounded-xl bg-saffron-light flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300">
-            <Icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
-          </div>
-          <h3 className="text-lg font-semibold mb-2 text-foreground">
-            {t(nameKey)}
-          </h3>
-          <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-            {t(descriptionKey)}
-          </p>
-          <div className="flex items-center gap-2 text-primary text-sm font-medium group-hover:gap-3 transition-all duration-300">
-            <span>{t('services.requestService')}</span>
-            <ArrowRight className="w-4 h-4" />
-          </div>
+      <div>
+        <div className="w-12 h-12 bg-saffron-light rounded-xl flex items-center justify-center mb-4">
+          <Icon className="w-6 h-6 text-primary" />
         </div>
-      </Link>
+
+        <h3 className="text-lg font-semibold mb-2">
+          {t(nameKey)}
+        </h3>
+
+        <p className="text-muted-foreground text-sm">
+          {t(descriptionKey)}
+        </p>
+      </div>
+
+      {/* Call Now Button */}
+      <a
+        href={`tel:+${phoneNumber}`}
+        className="mt-5 inline-flex items-center justify-center gap-2 rounded-xl bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:opacity-90 transition"
+      >
+        <Phone className="w-4 h-4" />
+        Call Now
+      </a>
     </motion.div>
   );
 };
